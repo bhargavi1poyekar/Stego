@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EncryptOneWayActivity">
+
+    <Button
+        android:id="@+id/btnTakePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="123dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="54dp"
+        android:background="#000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/btnTakePic"
+        app:layout_constraintEnd_toEndOf="@+id/btnTakePic"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="@+id/btnTakePic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/textMessage"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="@string/enter_message"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="true"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/hideButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:ems="10"
+        android:hint="@string/enter_key"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/textMessage"
+        app:layout_constraintEnd_toStartOf="@+id/image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textMessage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <Button
+        android:id="@+id/hideButton"
+        android:layout_width="400dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginBottom="247dp"
+        android:text="@string/encode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTakePic" />
+
+    <Button
+        android:id="@+id/buttonShareImage"
+        android:layout_width="400dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/hideButton"
+
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="157dp"
+        android:text="@string/share_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/hideButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/hideButton"
+        app:layout_constraintTop_toBottomOf="@+id/hideButton"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_marginBottom="50dp"
+        tools:layout_editor_marginTop="550dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

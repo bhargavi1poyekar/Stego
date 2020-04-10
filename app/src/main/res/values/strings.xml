@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Stego</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="one_way">One Way</string>
+    <string name="two_way">Two Way</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="action_settings" />
+    <string name="choose_image">Choose Image</string>
+    <string name="enter_message">Message</string>
+    <string name="enter_key">Key</string>
+    <string name="hide">Hide</string>
+    <string name="cipher_key">Cipher Key</string>
+    <string name="decode">Decode</string>
+    <string name="encode">Encode</string>
+    <string name="hidden_message">hidden message</string>
+    <string name="share_image">Share Image</string>
+    <string name="your_message">Your Message</string>
+    <string name="two_way_encryption">Two Way Encryption</string>
+    <string name="decipher_key">Decipher Key</string>
+</resources>
